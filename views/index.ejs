@@ -1,0 +1,94 @@
+<!--
+index.ejs
+Danielle Taplin
+6/18/2023
+Landing page for my Pets-R-Us web app
+-->
+
+<!--display header.ejs partial-->
+<%- include("header.ejs")  %>
+
+<!--display main container-->
+<div class="main-container">
+    <!--display upper-grid container-->
+    <div class="upper">
+        <!--display header and info about Pets-R-Us(NEEDS UPDATING)-->
+        <h1>Our Mission:</h1>
+        <p class="summary"> 
+           Our mission here at Pets-R-Us is to provide quality service and products to both you and your furry friends. We welcome all pet lovers to visit us at Pets-R-Us. Our friendly staff is always on hand to assist you with any queries that you may have, and we take great pride in providing excellent customer service.
+           Pets-R-Us is a thriving business that specializes in providing high-quality pet products and services. 
+           We offer a wide range of products, including food, toys, and accessories for dogs, cats, birds, and other small animals. Our team is dedicated to providing exceptional customer service, and we pride ourselves on our ability to offer personalized advice and guidance to pet owners. 
+           In addition to our retail operations, we also offer grooming services, training classes, and veterinary care. Our goal is to create a welcoming and supportive environment for pet owners, and we are committed to helping our customers provide the best possible care for their furry friends.
+        </p>
+    </div>
+    <!--display lower grid container-->
+    <div class="lower">
+        <!--addresses for a few locations -add more as needed- -->
+        <div class="location">
+            <h1>Locations:</h1>
+            <h2>San Diego, CA</h2>
+            <p>2094 Warf St</p>
+            <h2>Alexandria, VA</h2>
+            <p>5678 E 12 Lynn Dr</p>
+        </div>
+
+        <!--display business hours for the stores-->
+        <div class="hours">
+            <h2>Hours:</h2>
+            <p>Mon: 9:00 AM - 7:00 PM</p>
+            <p>Tue: 9:00 AM - 7:00 PM</p>
+            <p>Wed: 9:00 AM - 7:00 PM</p>
+            <p>Thu: 9:00 AM - 7:00 PM</p>
+            <p>Fri: 9:00 AM - 7:00 PM</p>
+            <p>Sat: 10:00 AM - 6:00 PM</p>
+            <p>Sun: 10:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+</div>
+
+<!--display dog of the week and testimonials-->
+<div class="mid-container">
+    <!--display card holding info on dog of the week-->
+    <div class="card">
+        <h2>Dog of the Week</h2>
+        <img src="/public/images/dogofweek.jpg" alt="Image of a Shiba Inu dog sitting with his paw up and tongue out" height="300" width="225">
+        <p>Name: Moshi</p>
+        <p>Likes: Naps, Hiking, Head Pats </p>
+        <p>Moshi is a beautiful dog, so playful and cute.
+            He gets a lovely bowtie to show off this week
+        </p>
+    </div>
+
+    <!--display card holding testimonials-->
+    <div class="card">
+        <h2>Testimonials - </h2>
+        <div class="testimonials">
+            <p>"I recently took my dog to get groomed at this amazing dog grooming salon and I am extremely impressed with their services. 
+                The staff was very friendly and professional, and they took excellent care of my furry friend."</p>
+            <p>Jessica P.</p>
+            <br>
+            <p>"I highly recommend their boarding services for dogs, as they provide great care and attention to my furry friend. My dog is always happy and well-cared for when I pick him up, and I feel confident leaving him with their experienced staff. 
+                They go above and beyond to ensure that his stay is comfortable and enjoyable, with plenty of playtime, exercise, and socialization. I appreciate the peace of mind knowing that my dog is in good hands while I am away."</p>
+            <p>Lena L.</p>
+            <br>
+            <p>"I wouldn't take my dogs anywhere else."</p>
+            <p>Roger K.</p>
+            <br>
+            <p>"I recently took my furry friend to get washed at a local dog washing service and I couldn't be happier with the results! 
+                The staff were friendly and patient with my nervous dog, and they did an amazing job getting rid of all the dirt and grime from her fur."</p>
+            <p>Norman S.</p>
+        </div>
+    </div>
+</div>
+
+<!--display container with form for providing user email-->
+<div class="bottom-container">
+    <h2>Contact Us:</h2>
+    <form>
+        <input type="email" placeholder="Email">
+        <button>Submit</button>
+    </form>
+</div>
+
+<!--display footer.ejs partial-->
+<%- include("footer.ejs")  %>

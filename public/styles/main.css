@@ -1,0 +1,209 @@
+/*
+main.css
+Danielle Taplin
+6/18/2023
+Main css page for my pets-r-us web app
+*/
+
+/*HTML, body styling(NEEDS UPDATING)*/
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    text-align: center;
+    font-family: serif;
+}
+
+/*navbar and footer styling(NEEDS UPDATING)*/
+nav, footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple;
+    color: gray;
+    font-size: 30px;
+    margin: 0;
+}
+
+nav{
+    position: sticky;
+    top:0;
+}
+
+.footer{
+    color: #FFF;
+    font-size: 16px;
+    width: 99%;
+    bottom: 0;
+    position: fixed;
+    padding: 0 10px 0 10px;
+}
+
+/*main logo*/
+.main-logo{
+    margin-left: 10px;
+}
+/*Figure out font family & fix h1, etc*/
+
+/*List and list item styling*/
+ul{
+    list-style-type: none;
+    padding: 0
+}
+
+li{
+    display: inline;
+}
+
+/*styling for the nav links*/
+li a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+a:visited{
+    color: #FFF;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*styling to enable drop-down menu on hover for the Services nav option*?(NEEDS UDPDATING)/
+ul li ul.dropdown {
+    width: 20%;
+    margin-left: 60%;
+    background: pink;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+/*nav container styling*/
+.nav-container{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+}
+
+/*main container styling(NEEDS UPDATING)*/
+.main-container{
+    text-align: center;
+    display: grid;
+    grid-template-rows: .2fr 1fr;
+    background-color: orange;
+    margin: 50px 100px 70px 100px;
+}
+
+.summary{
+    text-align: left;
+}
+
+
+/*styling for text in the upper div*/
+.upper p {
+    padding: 0 130px 0 130px;
+    font-size: 18px;
+}
+
+/*styling for the lower div*/
+.lower{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*middle container styling*/
+.mid-container{
+    display: grid;
+    justify-content: center;
+    padding: 30px 100px 30px 100px;
+    margin-top: 1%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+/*card styling(NEEDS UPDATING)*/
+.card{
+    width: 100%;
+    background-color: red;
+}
+
+/*testimonials styling*/
+.testimonials{
+    text-align: left;
+    padding-left:5px;
+}
+
+/*bottom container styling*/
+.bottom-container{
+    text-align: center;
+    display: grid;
+    grid-template-rows: .5fr .5fr;
+    background-color: #FFF;
+    margin: 50px 100px 70px 100px;
+}
+
+/*setting the border radius for all container types(NEEDS UPDATING -color)*/
+.card, .main-container, .bottom-container, .list-container{
+    border-radius: 20px;
+    border: solid 10px black;
+}
+
+/*set form display to flex*/
+.form{
+    display: flex;
+}
+
+/*text input styling*/
+input{
+    font-size: 16px;
+    width: 300px;
+}
+
+/*  STYLING FOR GROOMING PAGE --needs updating */
+.grooming{
+    padding: 0 20px 20px 22px;
+}
+
+/*list styling*/
+.list-container{
+    background-color: #FFF;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+    margin: 30px 50px 10% 50px;
+}
+
+/*align text to left for services container*/
+.services-container{
+    text-align: left;
+    padding: 0 160px 30px 30px;
+}
+
+/*font styling for service name*/
+.service-name{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/*style for adding images to services pages*/
+.service-summary{
+    display: flex;
+    padding: 0 50px 50px 30px;
+}
+
+.center-image{
+    padding-left: 20px;
+}

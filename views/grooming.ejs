@@ -1,0 +1,64 @@
+<!--
+grooming.ejs
+Danielle Taplin
+6/18/2023
+Dog grooming info on pets-r-us website
+-->
+
+<!--display header.ejs partial-->
+<%- include("header.ejs")  %>
+
+<!--display a container with header and info on grooming-->
+<div class="main-container">
+    <h1>Grooming Services:</h1>
+
+    <div class="grooming service-summary">
+        <p class="summary">Are you looking for top-notch grooming services for your furry friend? Look no further! Pets-R-Us is pleased to offer dog grooming services that will leave your pet feeling and looking their best. 
+            Our skilled and trained groomers provide a range of services including bathing, nail trimming, ear cleaning, and hair trimming. 
+            We use only high-quality products that ensure your dog is healthy and happy. Whether you want a simple wash-and-dry or a full-service grooming package, we are here to meet your needs. 
+            Trust us to give your dog the TLC they deserve! Book an appointment today at Pets-R-Us.
+           </p>
+           <p>We have been in the dog grooming business for 10 years and counting and have won numerous certificates for cleanest grooming stations. We also have won the Grand Champion for dog grooming from the Fiesta Bowl for the past three years. 
+            No matter how big or small your request is for your furry friend, we can assure you here at Pets-R-Us that we will always come through and make it happen.
+            We believe that pets are a member of the family and our goal is to give them the best experience possible. Pets-R-Us is a growing company and we couldn't do it without you all. Thank you from the Pets-R-Us family.
+        </p>
+           <!--display&center photo of dog being groomed-->
+           <div class="main-image">
+              <img src="/public/images/groomingpic.jpg" alt="Image of a small dog being groomed" height="350" width="450">
+           </div>
+    </div>
+</div>
+
+<!--display a container with a list of dog grooming services and their pricing-->
+<div class="list-container">
+    <h1>Services:</h1>
+    <div class="services-container">
+        <div class="service">
+            <p><span class="service-name">Trim and a Bath: </span>Our dog bathing service provides professional grooming for your furry friend. 
+                We use gentle, yet effective products to ensure your dog's coat is clean, healthy, and shiny. 
+                Our experienced groomers are well-versed in handling dogs of different breeds and sizes, making the experience stress-free and enjoyable for your pet. 
+                <span class="service-name">Starting at $45</span></p>
+        </div>
+
+        <div class="service">
+            <p><span class="service-name">Nail Trimming: </span>Our dog nail trimming service is designed to make the process of keeping your furry friend's nails healthy and comfortable as easy as possible. 
+                Our experienced and gentle team of groomers will work with your pet to ensure a stress-free experience, using the latest tools and techniques to trim and shape each nail with care and precision.
+                <span class="service-name">$15</span></p>
+        </div>
+
+        <div class="service">
+            <p><span class="service-name">Ear Cleaning: </span>We offer a professional dog ear cleaning service to help keep your furry friend's ears clean and healthy. 
+                Our experienced staff use safe and effective techniques to remove any built-up wax or debris that may be causing discomfort or irritation. 
+                <span class="service-name">$10</span></p>
+        </div>
+
+        <div class="service">
+            <p><span class="service-name">Spa Day: </span>A complete dog grooming experience involving giving your furry friend a bath, trimming their coat, cleaning their ears, brushing their teeth, clipping their nails, and finishing with a spritz of cologne or a bow. 
+                During the process, the groomer may inspect for any skin issues, fleas, or ticks.
+                <span class="service-name">Starting at $80</span></p>
+        </div>
+    </div>
+</div>
+
+<!--display footer.ejs partial-->
+<%- include("footer.ejs")  %>
