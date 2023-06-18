@@ -4,7 +4,8 @@
   "description": "WEB 340 pets-r-us course project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -14,9 +15,7 @@
     "WEB340",
     "Node",
     "project",
-    "pets",
-    "r",
-    "us"
+    "pets r us"
   ],
   "author": "Danielle Taplin",
   "license": "MIT",
