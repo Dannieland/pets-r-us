@@ -1,0 +1,69 @@
+<!--
+grooming.ejs
+Danielle Taplin
+6/23/2023
+boarding info on pets-r-us website
+-->
+
+<!--display _header.ejs partial-->
+<%- include("_header.ejs")  %>
+
+<div class="main-container">
+    <h1>Boarding Services:</h1>
+    <div class="service-summary">
+        <p class="summary">
+            Pets-R-Us provides top-notch overnight dog boarding services to ensure your furry friend receives the utmost care and attention. 
+            Our dedicated team of professionals is committed to providing the highest quality service to meet your dog's needs. From comfortable accommodations to healthy meals and given exercise time,
+             we offer a range of services to satisfy your dog's requirements. Your pooch's satisfaction is our top priority, which is why we guarantee you'll return to a healthy, a happy, 
+             and a tired dog after staying with us. Come to Pets-R-Us for the best dog boarding services in town! 
+           <br>
+            Pets-R-Us offers top-notch boarding services for dogs with a range of accommodations to suit different preferences. Dog owners can choose from standard suites, luxury suites, and play areas to ensure their furry friends have a comfortable stay. 
+           The boarding facility has round-the-clock surveillance, air conditioning, and heating to ensure that dogs feel at home. The facility also offers add-on services, including one-on-one playtime, extra meals, and grooming services to keep pets clean and healthy.
+            Overall, Pets-R-Us guarantees a safe and enjoyable experience for all pets in their care.
+        </p>
+        <!--display and center a photo of dog trainer-->
+        <div class="center-image">
+            <img src="../public/images/dogboard.jpg" alt="Photo of dog on bed" height="350" width="450">
+        </div>
+    </div>
+</div>
+
+<!--display a container with a list of dog training services and their pricing-->
+<div class="list-container boarding">
+    <h1>Pricing:</h1>
+    <div class="services-container">
+<!--one dog-->
+        <h2>One Dog:</h2>
+        <div class="service">
+            <p><span class="service-name">Regular Class: </span> $45 each night</p>
+
+            <p><span class="service-name">High Class: </span>$55 each night</p>
+        </div>
+        <br>
+ <!--two dogs-->       
+        <h2>Two Dogs:</h2>
+        <div class="service">
+            <p><span class="service-name">Regular Class:</span>$60 each night</p>
+
+            <p><span class="service-name">High Class:</span>$65 each night</p>
+        </div>
+        <br>
+<!--luxury suite&additional service-->
+        <div class="service">
+            <h2>Luxury Suite</h2>
+            <div class="service">
+                <p><span class="service-name">6 Nights All Inclusive/span>$499</p>
+    
+                <p><span class="service-name">One Night Add-On:</span>$70</p>
+            </div>
+            <br>
+            <h2>WoofWatch:</h2>
+            <div class="service">
+              <p>$14.99/day/dog</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!--display _footer.ejs partial-->
+<%- include("_footer.ejs")  %>

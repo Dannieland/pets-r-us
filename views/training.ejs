@@ -1,0 +1,71 @@
+<!--
+training.ejs
+Danielle Taplin
+6/23/2023
+training info on pets-r-us website
+-->
+
+<!--display _header.ejs partial-->
+
+<%- include("_header.ejs")  %>
+
+<div class="main-container">
+    <h1>Training Facility:</h1>
+    <div class="service-summary">
+        <p class="summary training">
+            Pets-R-Us boasts of having the top-notch training facility perfect for your furry friend. 
+            Our specialized training program provides personalized training sessions to train and equip your dog with the necessary
+            skills and obedience it needs. Our experienced trainers use positive reinforcement techniques to encourage good behavior
+            and nurture its development. We aim to provide your dog with a comfortable and safe training environment that will promote
+            optimal learning and growth. Bring your furry friend to us, and we assure you that it will receive the best training experience ever.
+           <br>
+           <br>
+             At Pets-r-Us, our top notch trainer is a certified professional who brings years of experience and expertise in animal behavior to our team.
+             With a passion for helping pets and their owners, our trainer works closely with each client to develop personalized training programs that meet their unique needs and goals.
+             From basic obedience to advanced tricks and behavior modification, our trainer has the knowledge and skills to turn any pet into a well-behaved and happy companion. 
+             Trust us to provide only the best training services for your furry friend.
+        </p>
+        <!--dog trainer photo-->
+        <div class="center-image">
+            <img src="../public/images/dogtrain.jpg" alt="Photo of a dog walking on training equipment" height="350" width="450">
+        </div>
+    </div>
+</div>
+
+<!--display a container with a list of dog training services and their pricing-->
+<div class="list-container">
+    <h1>Services:</h1>
+    <div class="services-container">
+        <h2>Puppy Training:</h2>
+        <div class="service">
+            <p><span class="service-name">Puppy Training I: </span>2-5 Months
+             <span class="service-name">$99</span></p>
+
+            <p><span class="service-name">Puppy Training II: </span>5-12 Months
+            <span class="service-name">$119</span></p>
+        </div>
+        <br>
+        <h2>Adolescent Dog Training:</h2>
+        <div class="service">
+            <p><span class="service-name">Adolescent Training I: </span>12-14 Months
+             <span class="service-name">$129</span></p>
+
+            <p><span class="service-name">Adolescent Training II: </span>14-18 Months
+                - <span class="service-name">$139</span></p>
+        </div>
+        <br>
+        <div class="service">
+            <h2>Advanced Training:</h2>
+            <div class="service">
+                <p><span class="service-name">Advanced Training I: </span>18 Months and Up, Advanced training beyond basic life skills 
+                    <span class="service-name">$199</span></p>
+    
+                <p><span class="service-name">Advanced Training II: </span>20 Months and Up, Advanced Training I completion required prior to this course
+                     <span class="service-name">$199</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--display _footer.ejs partial-->
+<%- include("_footer.ejs")  %>
