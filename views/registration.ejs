@@ -1,0 +1,36 @@
+<!--
+Danielle Taplin
+WEB340
+customer.js
+6/30/2023
+registration.js for course long pets-r-us project
+-->
+
+<%- include("./partials/_header.ejs")  %>
+
+<!--main container with header-->
+<div class="main-container">
+    <h1>Register</h1>
+
+    <!--form for customers to register-->
+    <form action="/customers" method="post">
+
+        <!--display text form field for customer ID and email-->
+        <div class="form-field">
+            <label for="customerId">Customer ID:&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="customerId" id="customerId">
+        </div>
+        <br>
+        <div class="form-field">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!--submit button-->
+        <div class="btn-field">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%- include("./partials/_footer.ejs")  %>
