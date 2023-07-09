@@ -1,0 +1,48 @@
+<!--
+customer-list.ejs
+Danielle Taplin
+7/09/2023
+customer list info for pets-r-us website
+-->
+
+<!--display _header.ejs partial-->
+<%- include("./partials/_header.ejs")  %>
+
+<!--display main container-->
+<div class="main-container">
+    <h1>Registered Customers</h1>
+
+    <!--IF there are registered customers-->
+    <% if(customers.length > 0) { %>
+
+        <!--display table with customer ID and email-->
+        <table class="table">
+            <tr>
+                <th>Customer ID:</th>
+                <th>Email:</th>
+            </tr>
+            <tbody>
+            <% customers.forEach(function(customer) { %>
+            <tr>
+                <td>
+                    <%= customer.customerId %>
+                </td>
+                <td>
+                    <%= customer.email %>
+                </td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+        <% } else { %>
+
+        <!--otherwise state no customers have been added to database-->
+
+        <h3>Customers have not been added to the database.</h3>
+        <% } %>
+
+</div>
+
+
+<!--display _footer.ejs partial-->
+<%- include("./partials/_footer.ejs")  %>
