@@ -1,0 +1,24 @@
+/*
+Danielle Taplin
+WEB340
+appointment.js
+7/15/2023
+appointment.js for course long pets-r-us project
+*/
+
+//require mongoose
+const mongoose = require('mongoose');
+
+//declare appointment schema including userName, firstName, lastName, email, and service fields
+let appointmentSchema = new mongoose.Schema({
+    userName: { type: String, required: true, unique: true },
+    firstName: { type: String, required: true, unique: true },
+    lastName: { type: String, required: true, unique: true },
+    email: { type: String, required: true, unique: true },
+    service: { type: String, required: true, unique: true }
+});
+
+
+
+//export the appointment module
+module.exports = mongoose.model('Appointment', appointmentSchema);
